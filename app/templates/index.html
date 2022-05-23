@@ -35,15 +35,18 @@
                   <td>{{dbs.marca}}</td>
                   <td>{{dbs.ano}}</td>
                   <td>
-                      <a href="view/{{dbs.id}}/" class="btn btn-dark">Visualizar</a> <!-- classes do botstrap -->
-                      <a href="" class="btn btn-primary">Editar</a>
-                      <a href="" class="btn btn-danger">Deletar</a>
+                      <a href="/view/{{dbs.id}}/" class="btn btn-dark">Visualizar</a> <!-- classes do botstrap -->
+                      <a href="/edit/{{dbs.id}}/" class="btn btn-primary">Editar</a>
+                      <a href="/delete/{{dbs.id}}/" class="btn btn-danger">Deletar</a>
                   </td>
                 </tr>
             {% endfor %}
             </tbody>
         </table>
     </div>
+
+    {% load static %}
+    <script src="{% static 'javascript.js' %}"></script>
 
 </body>
 
