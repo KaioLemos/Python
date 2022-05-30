@@ -16,7 +16,7 @@ def home(request):
     #all = Carros.objects.all() # recebe todos os registros
     #paginator = Paginator(all, 2) # exibe 2 registros por página
     #pages = request.GET.get('page') # pegar via GEt na nossa URL um parametro page
-    #data['db'] = paginator.get_page(pages) # vamos paginar de acordo com a nossa pagina
+    #data['db'] = paginator.get_page(pages) # vamos paginar de acordo com a nossa paginaa
     return render(request, 'index.html', data)
 
 
